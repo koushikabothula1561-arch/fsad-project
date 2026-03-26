@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guidance Center</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: black;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover {
+    color: #facc15;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+    url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+}
+
+.header h1 {
+    font-size: 45px;
+}
+
+/* Section */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px;
+}
+
+.card p {
+    padding: 0 10px 20px;
+    color: #bbb;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #facc15;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">CareerConnect</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="career-paths.html">Careers</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="learning.html">Learning</a>
+    </div>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <h1>Guidance Center</h1>
+    <p>Everything you need to prepare for your career journey</p>
+</div>
+
+<!-- Guidance Services -->
+<div class="section">
+    <h2>Our Guidance Services</h2>
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4">
+            <h3>Resume Builder</h3>
+            <p>Create professional, ATS-friendly resumes.</p>
+            <a href="#" class="btn">Start</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+            <h3>Interview Preparation</h3>
+            <p>Prepare with common questions and expert tips.</p>
+            <a href="#" class="btn">Practice</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+            <h3>Mock Interviews</h3>
+            <p>Experience real interview scenarios.</p>
+            <a href="#" class="btn">Try Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+            <h3>Mentorship</h3>
+            <p>Connect with industry professionals.</p>
+            <a href="#" class="btn">Connect</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+            <h3>Skill Roadmaps</h3>
+            <p>Step-by-step learning paths for careers.</p>
+            <a href="#" class="btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+            <h3>Study Resources</h3>
+            <p>Access notes, PDFs, and preparation material.</p>
+            <a href="#" class="btn">View</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>© 2026 CareerConnect | Guidance Hub</p>
+</div>
+
+</body>
+</html>
